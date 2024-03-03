@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://bwh0bw5w2fly0"]
+
+[node name="chair" type="Node3D"]
+
+[node name="respaldo" type="Node3D" parent="."]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="respaldo"]
+transform = Transform3D(-7.89876e-08, -0.69807, 2.12396e-16, 1.76759, -2.98477e-08, 0.0482709, -0.375456, 6.33997e-09, 0.227253, 0, 2.44098, -1.03315)
+sides = 40
+
+[node name="CSGBox3D" type="CSGBox3D" parent="respaldo/CSGCylinder3D"]
+transform = Transform3D(-2.44538e-08, -0.0140532, -1.55071, -1.43252, 1.58999e-09, 1.75466e-07, 8.53154e-09, 2.11757, 4.21907, -0.576878, -0.0300656, 0.439095)
+size = Vector3(0.2, 0.1, 0.28)
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="respaldo/CSGCylinder3D/CSGBox3D"]
+transform = Transform3D(-7.89872e-08, -0.69807, -2.83368e-14, -3.42069, 6.03849e-08, 0.257242, -0.0925432, 1.65783e-09, -0.0837032, 0.00204888, 1.26793, 0.197769)
+sides = 40
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="respaldo/CSGCylinder3D/CSGBox3D/CSGCylinder3D2"]
+transform = Transform3D(1.01274, -2.66454e-14, 0, 0, 0.963607, 0, 0, 0, 1, -2.92486e-08, -0.993661, 0)
+radius = 0.493551
+radial_segments = 20
+rings = 20
+
+[node name="CSGSphere3D2" type="CSGSphere3D" parent="respaldo/CSGCylinder3D/CSGBox3D/CSGCylinder3D2"]
+transform = Transform3D(1.01274, -2.66454e-14, 0, 0, 0.963607, 0, 0, 0, 1, 4.30115e-09, 0.99317, 0)
+radius = 0.493561
+radial_segments = 20
+rings = 20
+
+[node name="CSGBox3D" type="CSGBox3D" parent="respaldo/CSGCylinder3D/CSGBox3D/CSGCylinder3D2"]
+transform = Transform3D(0.999995, -1.06581e-14, -2.93367e-08, -6.46594e-13, 1, -5.77316e-15, -5.96046e-08, 3.30846e-14, 1, 0.0295734, 0.00343056, -2.40073)
+size = Vector3(0.1, 0.164258, 3.97388)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="respaldo/CSGCylinder3D"]
+transform = Transform3D(1.01274, -2.66454e-14, 0, 0, 0.963607, 0, 0, 0, 1, -2.92486e-08, -0.993661, 0)
+radius = 0.493551
+radial_segments = 20
+rings = 20
+
+[node name="CSGSphere3D2" type="CSGSphere3D" parent="respaldo/CSGCylinder3D"]
+transform = Transform3D(1.01274, -2.66454e-14, 0, 0, 0.963607, 0, 0, 0, 1, 4.30115e-09, 0.99317, 0)
+radius = 0.493561
+radial_segments = 20
+rings = 20
+
+[node name="CSGBox3D" type="CSGBox3D" parent="respaldo"]
+transform = Transform3D(0.658453, 0, 0.752622, 0, 1, 0, -0.752622, 0, 0.658453, 0.0710334, 0.0589057, 0.211303)
+size = Vector3(0.154541, 0.074646, 2.33656)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="respaldo"]
+transform = Transform3D(0.804075, 0, -0.594528, 0, 1, 0, 0.594528, 0, 0.804075, 0.0296111, 0.0589057, 0.115039)
+size = Vector3(0.154541, 0.074646, 2.33656)
